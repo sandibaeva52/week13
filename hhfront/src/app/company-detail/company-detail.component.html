@@ -1,0 +1,18 @@
+<!-- <div *ngIf="company">
+    <p>Id:{{ company.id }}</p>
+    <p>Name:{{ company.name }}</p>
+    <p>Description:{{ company.description }}</p>
+    <p>City:{{ company.city }}</p>
+    <p>Address:{{ company.address }}</p>
+</div> -->
+  
+<div *ngIf="company">
+    <h2>"{{company.name}}" Vacancies</h2>
+  </div>
+  
+  <div *ngFor="let vacancy of vacancies">
+    <p *ngIf="vacancy.name" style="text-decoration: underline">
+      {{ vacancy.name }}
+    </p>
+  </div>
+  <button (click)="goBack()" class="logout">Back</button>

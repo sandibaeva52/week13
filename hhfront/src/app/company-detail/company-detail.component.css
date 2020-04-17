@@ -1,0 +1,15 @@
+/* Set a style for all buttons */
+button {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    margin: 8px 10px 8px 0;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
